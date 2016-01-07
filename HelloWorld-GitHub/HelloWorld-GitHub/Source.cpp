@@ -6,21 +6,6 @@ using namespace std;
 
 int addition1(int a, int b);
 
-int main()
-{
-	cout << "Hello World!" << endl;
-	cout << "My first program." << endl;
-
-	cout << addition1(4, 8) << endl;
-
-	return 0;
-}
-
-int addition1(int a, int b)
-{
-	return a + b;
-}
-
 class Merman
 {
 private:
@@ -37,7 +22,28 @@ public:
 	void Mprint()
 	{
 		cout << setw(10) << "Name: " << merName << endl;
-		cout << setw(10) << "Age: " << endl;
+		cout << setw(10) << "Age: " << age << endl;
 	}
 };
+
+int main()
+{
+	cout << "Hello World!" << endl;
+	cout << "My first program." << endl;
+
+	cout << addition1(4, 8) << endl;
+
+	Merman Peterman("Peter",27);
+
+	Peterman.Mprint();
+
+	return 0;
+}
+
+int addition1(int a, int b)
+{
+	return a + b;
+}
+
+
 
